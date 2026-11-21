@@ -34,4 +34,4 @@ pytest --cov=src --cov-report=term-missing
 
 - **Prática 1 (Manhã):** Completar `tests/unit/test_desconto.py` aplicando padrão **AAA**, **Valor Limite** (`@pytest.mark.parametrize`) e **`pytest.raises`**.
 - **Prática 2 (Tarde):** Completar `tests/integration/test_api_pedidos.py` testando os endpoints `POST /pedidos` e `GET /pedidos` com `TestClient` e verificando a cobertura com `pytest-cov`.
-- **Prática 3 (Tarde):** Criar `.github/workflows/ci.yml` com dois jobs (`unit-tests` e `integration-tests` usando `needs: unit-tests`), fazer `git push` e acompanhar o pipeline no **GitHub Actions**.
+- **Prática 3 (Tarde):** Criar `.github/workflows/ci.yml` com os jobs `unit-tests` e `integration-tests` (dependente de `unit-tests`), publicar o relatório de cobertura `htmlcov/` como artefato, fazer `git push` e acompanhar a pipeline no **GitHub Actions**.
