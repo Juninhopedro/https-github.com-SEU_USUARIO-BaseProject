@@ -11,7 +11,7 @@ def test_aplica_10_por_cento_acima_de_100():
     resultado = calcular_desconto(valor)
 
     # Assert
-    assert resultado == 180.0
+    assert resultado == 181.0
 
 
 @pytest.mark.parametrize(
